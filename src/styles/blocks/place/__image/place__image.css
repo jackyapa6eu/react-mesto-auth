@@ -1,0 +1,12 @@
+.place__image {
+    position: relative;
+    z-index: 1;
+    height: 282px;
+    object-fit: cover;
+    transition: transform .6s ease-out;
+}
+
+.place__image:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}

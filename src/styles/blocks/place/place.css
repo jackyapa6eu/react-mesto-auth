@@ -1,0 +1,9 @@
+.place {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    color: black;
+}
