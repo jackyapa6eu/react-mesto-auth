@@ -199,10 +199,17 @@ function handleCardDelete(cardForDelete) {
     })   
   }
 
+  function signOut() {
+    localStorage.removeItem('jwt');
+    setIsLoggedIn(false);
+    setUserEmail('');
+    history.push('/sign-in');
+  }
+
   return (
       <div className="page">
         <CurrentUserContext.Provider value={currentUser}>
-          <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} userEmail={userEmail} setUserEmail={setUserEmail}/>
+          <Header isLoggedIn={isLoggedIn} userEmail={userEmail} signOut={signOut}/>
           <Switch>
             <Route path="/sign-up">
               <User texts={signUpTexts} handleSubmit={handleSignUpSubmit} isSuccess={isSuccessRegistration}/>
