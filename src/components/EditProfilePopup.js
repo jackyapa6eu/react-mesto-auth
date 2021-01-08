@@ -27,7 +27,8 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser}) {
   }
   return (
     <PopupWithForm name="editprofile" title="Редактировать профиль" isOpen={isOpen} onClose={onClose} onSubmit={handleSubmit}>
-      <input type="text" 
+      <input 
+        type="text" 
         name="name" 
         className="popup__input popup__input_type_display-name" 
         onChange={handleNameInput} 
@@ -37,7 +38,8 @@ function EditProfilePopup({isOpen, onClose, onUpdateUser}) {
         minLength="2" 
         maxLength="40"/>
       <span className='popup__error popup__error_visible' id="profile-display-name-input-error"/>
-      <input type="text" 
+      <input 
+        type="text" 
         name="about" 
         className="popup__input popup__input_type_profession" 
         onChange={handleDescriptionInput} 

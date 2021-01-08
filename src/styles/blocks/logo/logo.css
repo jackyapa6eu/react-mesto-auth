@@ -1,9 +1,10 @@
 .logo {
-    width: 142px;
+	width: 142px;
+	height: fit-content;
 }
 
 @media screen and (max-width: 581px) {
-    .logo {
-        width: 104px;
-    }
+	.logo {
+			width: 104px;
+	}
 }

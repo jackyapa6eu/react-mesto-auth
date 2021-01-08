@@ -1,6 +1,8 @@
 .content {
-    max-width: 882px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: calc(882px + 4%);
     margin: 0 auto;
     margin-bottom: 66px;
-    padding: 0 3%;
+    padding: 0 2%;
 }

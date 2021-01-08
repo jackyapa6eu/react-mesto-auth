@@ -1,0 +1,15 @@
+.user__input {
+  position: relative;
+  padding-bottom: 13px;
+  font-size: 14px;
+  line-height: 17px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #CCCCCC;
+  font-family: 'Inter', sans-serif;
+  color: #CCCCCC;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 358px;
+}
