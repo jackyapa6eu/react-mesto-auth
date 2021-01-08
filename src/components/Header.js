@@ -1,11 +1,12 @@
 import React from 'react';
 import headerLogo from '../images/header__logo.svg';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import classNames from 'classnames';
 
-function Header({isLoggedIn, userEmail, signOut}) {
+function Header({isLoggedIn, setIsLoggedIn, userEmail, setUserEmail}) {
   const [isBurgerOpened, setIsBurgerOpened] = React.useState(false);
   const location = useLocation();
+  const history = useHistory();
 
   const burgerMenuSelectors = classNames(
     'header__burger-menu',
@@ -21,6 +22,13 @@ function Header({isLoggedIn, userEmail, signOut}) {
       'header__user-container_opened': isBurgerOpened
     }
   )
+
+  function signOut() {
+    localStorage.removeItem('jwt');
+    setIsLoggedIn(false);
+    setUserEmail('');
+    history.push('/sign-in');
+  }
 
   function toggleBurgerMenu() {
     setIsBurgerOpened(!isBurgerOpened);
