@@ -45,7 +45,7 @@ function Header({isLoggedIn, setIsLoggedIn, userEmail, setUserEmail}) {
       <div className="header__container">
         <img className="logo" src={headerLogo} alt="логотип Mesto"/>
         {location.pathname === '/sign-up' && <Link className="header__link" to='/sign-in'>Войти</Link>}
-        {location.pathname === '/sign-in' && <Link className="header__link" to='/sign-up'>зарегистрироваться</Link>}
+        {location.pathname === '/sign-in' && <Link className="header__link" to='/sign-up'>Зарегистрироваться</Link>}
         {isLoggedIn && 
           <div className="header__user-container">
             <span className="header__email">{userEmail}</span>
