@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import HaveAccount from './HaveAccount';
 import classNames from 'classnames';
 
-function SignIn({texts, handleSubmit, type, children}) {
+function SignIn({texts, handleSubmit}) {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const location = useLocation();
