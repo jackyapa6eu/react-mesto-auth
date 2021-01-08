@@ -2,9 +2,9 @@ import React from 'react';
 import CurrentUserContext from '../contexts/CurrentUserContext.js';
 import Card from './Card.js';
 
-function Main({cards, onAddPlace, onCardClick, onCardDelete, onCardLike, onEditAvatar, onEditProfile, onFullImage}) {
+function Main(props) {
   const currentUser = React.useContext(CurrentUserContext);
-
+  const {cards, onAddPlace, onCardClick, onCardDelete, onCardLike, onEditAvatar, onEditProfile, onFullImage} = props;
   return (
     <main className="content">
       <section className="profile">

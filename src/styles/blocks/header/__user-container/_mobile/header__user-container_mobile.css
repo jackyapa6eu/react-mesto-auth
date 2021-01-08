@@ -1,0 +1,17 @@
+.header__user-container_mobile {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+@media screen and (max-width: 635px) {
+  .header__user-container_mobile {
+    display: flex;
+  }
+}
