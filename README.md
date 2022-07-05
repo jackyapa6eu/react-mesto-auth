@@ -17,16 +17,16 @@
 - Асинхронные операции
 - Использование Api
 
-## Сборка
-
-1. `git clone https://github.com/jackyapa6eu/mesto-react.git`
-2. `cd mesto-react`
-3. `npm install`  
-
+## Установка проекта
+```
+git clone https://github.com/jackyapa6eu/mesto-react.git
+cd mesto-react
+npm install  
+```
 ## Запуск  
-- `npm start`  
-
-## Статус проекта:
-- `завершен`
+```
+npm start 
+```
+## Статус проекта: `завершен`
 
 ## [Ссылка на gh-pages](https://jackyapa6eu.github.io/react-mesto-auth/)
