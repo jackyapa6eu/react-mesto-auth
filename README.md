@@ -24,8 +24,9 @@
 3. `npm install`  
 
 ## Запуск  
-`npm start`  
+- `npm start`  
 
-## Статус проекта: завершен
+## Статус проекта:
+- `завершен`
 
 ## [Ссылка на gh-pages](https://jackyapa6eu.github.io/react-mesto-auth/)
