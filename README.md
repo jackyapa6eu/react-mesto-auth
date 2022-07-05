@@ -29,7 +29,7 @@ npm start
 ```
 ## Сборка
 ```
-npm build
+npm run build
 ```
 ## Статус проекта: `завершен`
 
