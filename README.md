@@ -27,6 +27,10 @@ npm install
 ```
 npm start 
 ```
+## Сборка
+```
+npm build
+```
 ## Статус проекта: `завершен`
 
 ## [Ссылка на gh-pages](https://jackyapa6eu.github.io/react-mesto-auth/)
